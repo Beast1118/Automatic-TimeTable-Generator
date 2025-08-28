@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoTimetable - Smart Scheduler</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('./Pictures/background1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.6);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: #ffffff;
+    }
+
+    nav a {
+      margin-left: 2rem;
+      color: #eee;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #5be3b2;
+    }
+
+    .hero {
+      padding: 6rem 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 4rem;
+      background: rgba(0, 0, 0, 0.5);
+      animation: fadeIn 2s ease-out;
+    }
+
+    .hero-content h2 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-content p {
+      font-size: 1.3rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .cta-button {
+      background: #5be3b2;
+      color: #000;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cta-button:hover {
+      background: #12eb0e;
+      background: linear-gradient(90deg, rgb(235, 14, 187) 0%, rgb(183, 20, 61) 50%, rgb(50, 27, 230) 100%);
+      box-shadow: 5px 5px 60px lightblue;
+    }
+
+    .hero-image video {
+      width: 100%;
+      max-width: 520px;
+      border-radius: 16px;
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    section h3 {
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      color: #5be3b2;
+    }
+
+    section p, ul {
+      font-size: 1.15rem;
+      max-width: 850px;
+      margin: 0 auto 2rem;
+      line-height: 1.7;
+    }
+
+    ul li {
+      margin-bottom: 0.8rem;
+    }
+
+    footer {
+      padding: 2rem;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5);
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AutoTimetable</h1>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#demo">About Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Revolutionize Scheduling with AI</h2>
+      <p>Create conflict-free, optimized timetables instantly using intelligent algorithms. Designed for institutions aiming to streamline academic scheduling effortlessly.</p>
+      <button class="cta-button" onclick="location.href='login.html'">Generate Your Timetable</button>
+    </div>
+  </section>
+
+  <section id="features">
+    <h3>Key Features</h3>
+    <ul>
+      <li>Automated Timetable Generation:- Quickly generate an optimized timetable by inputting subjects and faculty information, ensuring balanced schedules for all.</li>
+      <li>Dynamic inputs for faculties, rooms, and departments</li>
+      <li>Visual timetable preview</li>
+      <li>conflict-free Time Table Generation</li>
+    </ul>
+  </section>
+
+  <section id="About US">
+    <h3>About Us</h3>
+    <p>
+      Our platform revolutionizes the way educational institutions generate timetables. By simply entering subjects, faculty details, and lecture preferences, you can create a perfectly balanced schedule that accommodates both students’ and professors’ needs. Experience the future of academic planning with our fully automated solution.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h3>Contact Us</h3>
+    <p>Have questions or want a custom solution? Reach us at <a href="mailto:khush5237@gmail.com" style="color: #5be3b2;">khush5237@.com</a> or connect via LinkedIn:- Patel-Khush.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 AutoTimetable. Crafted with ❤️ to automate scheduling.
+  </footer>
+</body>
+</html>
